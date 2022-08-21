@@ -1,7 +1,7 @@
 
 require('dotenv').config({path:"../config.env"})
 const mongoose = require("mongoose");
-const URL = process.env.DB_URL;
+const URL = process.env.DB_URL || "mongodb+srv://nitin:nitin@cluster0.k0lisal.mongodb.net/MILKDELIVERY?retryWrites=true&w=majority";
 mongoose.connect(URL).then(()=>{
     console.log("successfully connected to database");
 }).catch((error)=>{
