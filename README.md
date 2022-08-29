@@ -1,5 +1,5 @@
 This is rest api of milk delivery
-
+To run the app run command npm run dev
 POST: To place an order
 url-  http://localhost:5000/order
 
